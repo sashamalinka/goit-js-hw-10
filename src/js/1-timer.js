@@ -23,7 +23,10 @@ const options = {
   onClose(selectedDates) {
     const selectedDate = selectedDates[0];
     if (selectedDate < new Date()) {
-      window.alert('Please choose a date in the future');
+      iziToast.error({
+        title: 'Error',
+        message: 'Please choose a date in the future',
+      });
       startButton.disabled = true;
     } else {
       userSelectedDate = selectedDate;
@@ -70,6 +73,10 @@ startButton.addEventListener('click', () => {
       minutesData.textContent = '00';
       secondsData.textContent = '00';
       input.disabled = false;
+      iziToast.success({
+        title: 'Finished',
+        message: 'The countdown has finished!',
+      });
       return;
     }
 
