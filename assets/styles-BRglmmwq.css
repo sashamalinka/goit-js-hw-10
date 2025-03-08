@@ -1,1 +1,0 @@
-*{box-sizing:border-box}ul,ol{list-style:none;margin:0;padding:0}img{display:block;object-fit:cover}a{text-decoration:none}body{font-family:Arial,sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh}.timer{display:flex;gap:20px;margin-top:20px}.field{text-align:center}.value{font-size:2rem;font-weight:700}
